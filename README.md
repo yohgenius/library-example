@@ -11,6 +11,8 @@
   </tr>
 </table>
 
+[Download sample apk](https://drive.google.com/file/d/1Hnapf97itPCPdszYBYBLuMwudrZVnpXN/view?usp=sharing)
+
 ## Description
 
 A sample library created using native Kotlin and XML, showing an activity that can be used as a separate feature on an app.
@@ -39,6 +41,31 @@ Step 2. Add the dependency
 
 ## Project setup
 
+Step 1. Create a button in view
+
+```bash
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/tanya_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="15dp"
+        android:text="Tanya Bestie" />
+</RelativeLayout>
+```
+
+Step 2. Set the onClickListener and intent destination
+
 ```bash
 class MainActivity : AppCompatActivity() {
 
@@ -56,3 +83,11 @@ class MainActivity : AppCompatActivity() {
     }
 }
 ```
+
+## Specifications
+
+- Compile SDK 35
+- Min SDK 29
+- Android gradle plugin 8.3.2
+- Kotlin 1.9.0
+- openjdk17
