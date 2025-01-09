@@ -43,6 +43,8 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
+    implementation(libs.tanya.library)
+
     implementation(libs.androidx.constraintlayout)
     implementation(project(":tanya-bestie"))
     testImplementation(libs.junit)

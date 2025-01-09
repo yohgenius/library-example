@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.tanya_bestie.TanyaActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -24,8 +23,8 @@ class MainActivity : AppCompatActivity() {
 
         tanyaBtn = findViewById(R.id.tanya_btn)
         tanyaBtn.setOnClickListener {
-            val tanyaBestie = Intent(this, TanyaActivity::class.java)
-            startActivity(tanyaBestie)
+//            val tanyaBestie = Intent(this, TanyaActivity::class.java)
+//            startActivity(tanyaBestie)
         }
     }
 }
