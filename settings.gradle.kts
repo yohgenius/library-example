@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "LibSample"
 include(":app")
+include(":tanya-bestie")
